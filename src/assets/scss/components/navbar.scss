@@ -1,0 +1,113 @@
+.tab-bar-box {
+  position: fixed;
+  bottom: 0;
+  height: 120px !important;
+  width: 100%;
+  background-color: $bg-body;
+}
+
+.tab-bar {
+  background-color: $tab-bar-bg-box;
+  padding: 0 20px 25px 20px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  justify-content: space-between;
+}
+.tab-bar .tab-indicator {
+  position: absolute;
+  background-color: $bg-body;
+  width: 80px;
+  height: 65px;
+  border-radius: 0 0 60px 60px;
+  z-index: 1;
+  transform: translateX(155px);
+  transition: transform 0.3s ease-out;
+}
+.tab-bar .tab-indicator .tab-indicator-left,
+.tab-bar .tab-indicator .tab-indicator-right {
+  background-color: $bg-body;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+}
+.tab-bar .tab-indicator .tab-indicator-left:after,
+.tab-bar .tab-indicator .tab-indicator-right:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $tab-bar-bg-box;
+  display: block;
+}
+.tab-bar .tab-indicator .tab-indicator-left {
+  left: -25px;
+}
+.tab-bar .tab-indicator .tab-indicator-left:after {
+  border-radius: 0 30px 0 0;
+}
+.tab-bar .tab-indicator .tab-indicator-right {
+  right: -25px;
+}
+.tab-bar .tab-indicator .tab-indicator-right:after {
+  border-radius: 30px 0 0 0;
+}
+.tab-bar .tab-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+  width: 60px;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  outline: none !important;
+}
+.tab-bar .tab-item .tab-item-inner {
+  color: $tab-bar-text;
+  position: absolute;
+  display: flex;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.tab-bar .tab-item.active .tab-item-inner {
+  transform: translateY(-10px);
+  transition-delay: 0.2s;
+  background-color: $tab-bar-bg-icon;
+  z-index: 2;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fadeUp {
+  animation: fadeUp 1s ease;
+}
+
+@include keyframes(fadeUp) {
+  50% {
+    transform: translateY(-100%);
+    opacity: 1;
+    z-index: 10000;
+    border: none;
+  }
+  25%,
+  75% {
+    transform: translateY(100%);
+    opacity: 1;
+    z-index: 10000;
+    border: none;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10000;
+    border: none;
+  }
+}

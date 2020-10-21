@@ -1,13 +1,6 @@
 @import "./variables";
 @import "./mixins";
 
-* {
-  color: $dark-red;
-  font-family: IRANSans;
-}
-.text-danger {
-  color: orange;
-}
-.active {
-  color: blue;
-}
+@import "./basic.scss";
+
+@import "./components/navbar.scss";
