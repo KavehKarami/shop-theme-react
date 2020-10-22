@@ -78,7 +78,7 @@
 }
 
 .tab-bar .tab-item.active .tab-item-inner {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   transition-delay: 0.2s;
   background-color: $tab-bar-bg-icon;
   z-index: 2;
