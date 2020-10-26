@@ -1,9 +1,10 @@
 .tab-bar-box {
-  position: fixed;
-  bottom: 0;
   height: 120px !important;
   width: 100%;
   background-color: $bg-body;
+  position: fixed;
+  bottom: 0;
+  // overflow: hidden;
 }
 
 .tab-bar {
@@ -17,81 +18,118 @@
   right: 0;
   height: 80px;
   justify-content: space-between;
-}
-.tab-bar .tab-indicator {
-  position: absolute;
-  background-color: $bg-body;
-  width: 80px;
-  height: 65px;
-  border-radius: 0 0 60px 60px;
-  z-index: 1;
-  transform: translateX(155px);
-  transition: transform 0.3s ease-out;
-}
-.tab-bar .tab-indicator .tab-indicator-left,
-.tab-bar .tab-indicator .tab-indicator-right {
-  background-color: $bg-body;
-  height: 25px;
-  width: 25px;
-  position: absolute;
-}
-.tab-bar .tab-indicator .tab-indicator-left:after,
-.tab-bar .tab-indicator .tab-indicator-right:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: $tab-bar-bg-box;
-  display: block;
-}
-.tab-bar .tab-indicator .tab-indicator-left {
-  left: -25px;
-}
-.tab-bar .tab-indicator .tab-indicator-left:after {
-  border-radius: 0 30px 0 0;
-}
-.tab-bar .tab-indicator .tab-indicator-right {
-  right: -25px;
-}
-.tab-bar .tab-indicator .tab-indicator-right:after {
-  border-radius: 30px 0 0 0;
-}
-.tab-bar .tab-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1000;
-  width: 60px;
-  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
-  outline: none !important;
-}
-.tab-bar .tab-item .tab-item-inner {
-  color: $tab-bar-text;
-  position: absolute;
-  display: flex;
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+  .tab-indicator {
+    position: absolute;
+    background-color: $bg-body;
+    width: 100px;
+    height: 65px;
+    border-radius: 0 0 50px 50px;
+    z-index: 1;
+    transform: translateX(155px);
+    transition: transform 0.3s ease-out;
+
+    .tab-indicator-left,
+    .tab-indicator-right {
+      background-color: $bg-body;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $tab-bar-bg-box;
+        display: block;
+      }
+    }
+
+    .tab-indicator-left {
+      left: -25px;
+
+      &:after {
+        border-radius: 0 25px 0 0;
+      }
+    }
+
+    .tab-indicator-right {
+      right: -25px;
+
+      &:after {
+        border-radius: 25px 0 0 0;
+      }
+    }
+  }
+
+  .tab-item {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    outline: none !important;
+    z-index: 100000;
+
+    .tab-item-inner {
+      color: $tab-bar-text;
+      position: absolute;
+      display: flex;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+
+      transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+
+      svg {
+        width: 40%;
+        transition: fill 0.2s ease-out 0.2s;
+
+        * {
+          stroke: $tab-bar-text;
+        }
+      }
+    }
+
+    &.active .tab-item-inner {
+      transform: translateY(-20px);
+      transition-delay: 0.2s;
+      background-color: $tab-bar-bg-box;
+      z-index: 2;
+      box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.25);
+
+      svg {
+        * {
+          stroke: $tab-bar-text;
+          animation: draw 0.8s linear forwards 0.2s;
+        }
+      }
+    }
+  }
 }
 
-.tab-bar .tab-item.active .tab-item-inner {
-  transform: translateY(-5px);
-  transition-delay: 0.2s;
-  background-color: $tab-bar-bg-icon;
-  z-index: 2;
-  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.25);
-}
-
-.fadeUp {
+.tab-item.active {
   animation: fadeUp 1s ease;
+
+  svg * {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+  }
+}
+
+@include keyframes(draw) {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
 }
 
 @include keyframes(fadeUp) {
   50% {
-    transform: translateY(-100%);
+    transform: translateY(-30%);
     opacity: 1;
     z-index: 10000;
     border: none;
@@ -109,5 +147,6 @@
     opacity: 1;
     z-index: 10000;
     border: none;
+    stroke-dashoffset: 0;
   }
 }
