@@ -1,0 +1,30 @@
+.homeIntro {
+  background-image: linear-gradient(135deg, #093170, #3378af);
+  height: 200px;
+
+  @include bp-md {
+    height: 450px;
+  }
+
+  .title {
+    font-size: 20px !important;
+
+    @include bp-md {
+      font-size: 40px !important;
+    }
+  }
+
+  .description {
+    font-size: 15px !important;
+
+    @include bp-md {
+      font-size: 25px !important;
+    }
+  }
+
+  .btn-box a {
+    font-size: 12px !important;
+
+    text-align: center;
+  }
+}
