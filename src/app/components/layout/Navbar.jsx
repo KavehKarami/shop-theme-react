@@ -1,4 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom"
+import AboutUsIcon from '../shared/icons/AboutUsIcon';
+import HomeIcon from '../shared/icons/HomeIcon';
+import OtherIcon from '../shared/icons/OtherIcon';
+import PriceIcon from '../shared/icons/PriceIcon';
 
 const Navbar = (props) => {
 
@@ -40,18 +45,30 @@ const Navbar = (props) => {
           <div className="tab-indicator-left"></div>
           <div className="tab-indicator-right"></div>
         </div>
-        <a href="/#" className="tab-item">
-          <div className="tab-item-inner">one</div>
-        </a>
-        <a href="/#" className="tab-item">
-          <div className="tab-item-inner">two</div>
-        </a>
-        <a href="/#" className="tab-item active">
-          <div className="tab-item-inner">three</div>
-        </a>
-        <a href="/#" className="tab-item">
-          <div className="tab-item-inner">Four</div>
-        </a>
+        <div className="tab-item">
+          <div className="tab-item-inner d-flex flex-column">
+            <OtherIcon />
+            سایر
+          </div>
+        </div>
+        <Link href="/about-us" className="tab-item">
+          <div className="tab-item-inner d-flex flex-column">
+            <AboutUsIcon />
+            درباره ما
+          </div>
+        </Link>
+        <Link to="/pricing" className="tab-item">
+          <div className="tab-item-inner d-flex flex-column">
+            <PriceIcon />
+            ‌تعرفه ها
+          </div>
+        </Link>
+        <Link to="/" className="tab-item active">
+          <div className="tab-item-inner d-flex flex-column">
+            <HomeIcon />
+            خانه
+          </div>
+        </Link>
 
       </div>
     </nav>
