@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
-import ShapeDivider1 from '../components/home/ShapeDivider1';
+import ShapeDivider1 from '../components/shared/shape-dividers/ShapeDivider1';
 
 const Home = () => {
   return (
