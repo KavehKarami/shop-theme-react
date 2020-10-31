@@ -1,33 +1,22 @@
-import React from 'react';
-import { Link } from "react-router-dom"
-import AboutUsIcon from '../../shared/icons/AboutUsIcon';
-import HomeIcon from '../../shared/icons/HomeIcon';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { mobileNavRouter } from '../../../routes';
 import OtherIcon from '../../shared/icons/OtherIcon';
-import PriceIcon from '../../shared/icons/PriceIcon';
+import CustomLink from '../../utils/CustomLink';
+
 
 const MobileNav = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    handleTabBar()
+  }, [location])
+
   function handleTabBar() {
-    // var tabBar = document.querySelectorAll(".tab-bar");
     var tabBarActive = document.querySelector(".tab-item.active");
-    var tabItems = document.querySelectorAll(".tab-bar .tab-item");
     var tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-
     var distance = Math.floor(tabBarActive.offsetLeft - 30);
-
     tabIndicator.style.transform = "translateX(" + distance + "px)";
-
-    Array.prototype.forEach.call(tabItems, function (el, i) {
-      el.addEventListener("click", function (e) {
-        distance = Math.floor(el.offsetLeft - 30);
-
-        tabIndicator.style.transform = "translateX(" + distance + "px)";
-
-        [].forEach.call(tabItems, function (el) {
-          el.classList.remove("active");
-        });
-        el.classList.add("active");
-      });
-    });
   }
 
   document.addEventListener("DOMContentLoaded", handleTabBar);
@@ -46,25 +35,8 @@ const MobileNav = () => {
             سایر
           </div>
         </div>
-        <Link to="/about-us" className="tab-item">
-          <div className="tab-item-inner d-flex flex-column">
-            <AboutUsIcon />
-            درباره ما
-          </div>
-        </Link>
-        <Link to="/pricing" className="tab-item">
-          <div className="tab-item-inner d-flex flex-column">
-            <PriceIcon />
-            ‌تعرفه ها
-          </div>
-        </Link>
-        <Link to="/" className="tab-item active">
-          <div className="tab-item-inner d-flex flex-column">
-            <HomeIcon />
-            خانه
-          </div>
-        </Link>
 
+        {mobileNavRouter.map((route, index) => <CustomLink key={index} path={route.path} exact={route.exact} label={route.label} icon={route.icon} />)}
       </div>
     </nav>
   );

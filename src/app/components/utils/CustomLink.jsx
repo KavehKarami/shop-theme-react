@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Link } from "react-router-dom";
 
 const CustomLink = (props) => {
+
+
   return (
     <Route
       path={props.path}
@@ -9,9 +11,19 @@ const CustomLink = (props) => {
       children={
         ({ match }) =>
           match ?
-            <Link className="active" to={props.path}>{props.label}</Link>
+            <Link className="tab-item active" to={props.path}>
+              <div className="tab-item-inner d-flex flex-column">
+                {props.icon}
+                {props.label}
+              </div>
+            </Link>
             :
-            <Link className="" to={props.path}>{props.label}</Link>
+            <Link className="tab-item" to={props.path}>
+              <div className="tab-item-inner d-flex flex-column">
+                {props.icon}
+                {props.label}
+              </div>
+            </Link>
       }
     />
 
