@@ -1,10 +1,11 @@
 .tab-bar-box {
-  height: 120px !important;
+  // height: 120px !important;
   width: 100%;
   background-color: $bg-body;
   position: fixed;
   bottom: 0;
   direction: ltr;
+  z-index: 100;
   // text-align: left;
   // overflow: hidden;
 }
