@@ -1,5 +1,9 @@
 .homeIntro {
-  background-image: linear-gradient(135deg, #093170, #3378af);
+  background-image: linear-gradient(
+    135deg,
+    $home-intro-bg-left,
+    $home-intro-bg-right
+  );
   height: 200px;
 
   @include bp-md {
@@ -20,11 +24,5 @@
     @include bp-md {
       font-size: 25px !important;
     }
-  }
-
-  .btn-box a {
-    font-size: 12px !important;
-
-    text-align: center;
   }
 }

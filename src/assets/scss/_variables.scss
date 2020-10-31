@@ -1,6 +1,20 @@
+/* ------------------------- Material-ui colors ------------------------ */
+$blue-900-dark: #093170;
+
+$lightBlue-900-light: #3378af;
+$lightBlue-900: #01579b;
+$lightBlue-700: #0091ea;
+
+/* -------------------------------------------------------------------------- */
+
 $bg-body: #eceef7;
 $main-color: #fff;
 
-$tab-bar-bg-box: #01579b;
+$tab-bar-bg-box: $lightBlue-900;
 $tab-bar-bg-icon: $tab-bar-bg-box;
 $tab-bar-text: #fff;
+
+$home-intro-bg-left: $blue-900-dark;
+$home-intro-bg-right: $lightBlue-900-light;
+
+$btn-water: $lightBlue-700;
