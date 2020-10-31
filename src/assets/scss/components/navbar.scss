@@ -115,7 +115,7 @@
 }
 
 .tab-item.active {
-  animation: fadeUp 1s ease;
+  animation: upAndScale 1s ease;
 
   svg * {
     stroke-dasharray: 100;
@@ -130,7 +130,7 @@
   }
 }
 
-@include keyframes(fadeUp) {
+@include keyframes(upAndScale) {
   50% {
     transform: translateY(-30%);
     opacity: 1;
