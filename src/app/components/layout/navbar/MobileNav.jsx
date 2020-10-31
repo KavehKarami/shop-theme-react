@@ -18,18 +18,14 @@ const MobileNav = () => {
 
     Array.prototype.forEach.call(tabItems, function (el, i) {
       el.addEventListener("click", function (e) {
-        e.preventDefault();
-
         distance = Math.floor(el.offsetLeft - 30);
 
         tabIndicator.style.transform = "translateX(" + distance + "px)";
 
         [].forEach.call(tabItems, function (el) {
           el.classList.remove("active");
-          // el.classList.remove('upAndScale')
         });
         el.classList.add("active");
-        // el.classList.add("upAndScale");
       });
     });
   }
@@ -38,13 +34,13 @@ const MobileNav = () => {
   document.getElementsByTagName("BODY")[0].onresize = function () { handleTabBar() };
 
   return (
-    <nav className="tab-bar-box d-md-none">
+    <nav className="tab-bar-box">
       <div className="tab-bar">
         <div className="tab-indicator">
           <div className="tab-indicator-left"></div>
           <div className="tab-indicator-right"></div>
         </div>
-        <div className="tab-item">
+        <div className="tab-others">
           <div className="tab-item-inner d-flex flex-column">
             <OtherIcon />
             سایر
