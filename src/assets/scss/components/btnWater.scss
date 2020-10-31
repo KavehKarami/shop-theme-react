@@ -1,0 +1,73 @@
+.btn-water {
+  position: relative;
+  text-decoration: none !important;
+  color: #fff;
+  border: 1px solid $btn-water;
+  padding: 0em 0.7em;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: all 1s ease;
+  height: 35px;
+
+  &:before,
+  &:after {
+    content: "";
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: -1;
+    top: 150%;
+    transition: all 1.4s ease;
+  }
+
+  &:before {
+    border-radius: 60% 70% 20% 40%;
+    background: $btn-water;
+    opacity: 0.2;
+    animation: water 7s ease-in-out infinite both alternate;
+  }
+
+  &:after {
+    border-radius: 60% 70% 20% 40%;
+    background: $btn-water;
+    opacity: 0.5;
+    animation: water 8s ease-in-out infinite both alternate;
+  }
+
+  &:hover {
+    background: $btn-water;
+    color: #fff;
+    &:before,
+    &:after {
+      opacity: 1;
+      top: -100%;
+    }
+  }
+}
+
+@include keyframes(water) {
+  0% {
+    transform: rotate(0);
+  }
+
+  20% {
+    border-radius: 50% 63% 80% 49%;
+  }
+  40% {
+    border-radius: 60% 64% 64% 48%;
+  }
+  60% {
+    border-radius: 80% 63% 51% 49%;
+  }
+  80% {
+    border-radius: 40% 60% 42% 58%;
+  }
+  100% {
+    border-radius: 62% 67% 70% 53%;
+    transform: rotate(180deg);
+  }
+}
