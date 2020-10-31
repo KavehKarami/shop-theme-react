@@ -26,10 +26,10 @@ const MobileNav = () => {
 
         [].forEach.call(tabItems, function (el) {
           el.classList.remove("active");
-          el.classList.remove('fadeUp')
+          // el.classList.remove('upAndScale')
         });
         el.classList.add("active");
-        el.classList.add("fadeUp");
+        // el.classList.add("upAndScale");
       });
     });
   }
