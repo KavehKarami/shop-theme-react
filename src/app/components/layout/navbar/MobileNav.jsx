@@ -23,7 +23,7 @@ const MobileNav = () => {
   document.getElementsByTagName("BODY")[0].onresize = function () { handleTabBar() };
 
   return (
-    <nav className="tab-bar-box">
+    <nav className="tab-bar-box d-md-none">
       <div className="tab-bar">
         <div className="tab-indicator">
           <div className="tab-indicator-left"></div>
