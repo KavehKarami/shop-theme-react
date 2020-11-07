@@ -1,3 +1,9 @@
+h1.card-title {
+  font-size: 0.75rem;
+  @include bp-md {
+    font-size: 1.75rem !important;
+  }
+}
 .feature-card {
   position: relative;
   margin: 25px auto;
