@@ -3,12 +3,16 @@
   height: 215px;
   position: relative;
   background-color: #fff;
-  margin: 30px 10px;
+  margin: 50px 10px;
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
+
+  @include bp-md {
+    margin: 30px 10px;
+  }
 
   &:hover {
     height: 320px;
