@@ -8,7 +8,7 @@ const WorkSampleCard = (props) => {
       <div className="content">
         <h2 className="title">{props.title}</h2>
         <p className="description">{props.description}</p>
-        <button>asd</button>
+        <a href={props.href || "/"} target="_blank" rel="noopener noreferrer">برای دیدن کلیک کنید</a>
       </div>
 
       <div className="titr">
