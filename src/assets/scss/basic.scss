@@ -11,3 +11,7 @@ body {
 .text-dark {
   color: $lightBlue-900 !important;
 }
+a,
+a:hover {
+  text-decoration: none;
+}
