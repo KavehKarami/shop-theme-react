@@ -9,6 +9,7 @@
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
+  width: 100%;
 
   @include bp-md {
     margin: 30px 10px;
@@ -35,7 +36,7 @@
     height: 180px;
     min-height: 180px;
     max-height: 180px;
-    width: 260px;
+    width: 100%;
     top: -60px;
     align-self: center;
     z-index: 1;
