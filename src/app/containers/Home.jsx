@@ -1,6 +1,7 @@
 import React from 'react';
 import FeaturesSection from '../components/home/FeaturesSection';
 import HomeIntro from '../components/home/HomeIntro';
+import OurTeamSection from '../components/home/OurTeamSection';
 import WorkSampleSection from '../components/home/WorkSampleSection';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <HomeIntro />
       <FeaturesSection />
       <WorkSampleSection />
+      <OurTeamSection />
 
       <div className="text-dark">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, impedit aperiam sint minus totam et, illo rem doloremque optio, quisquam labore ratione voluptatem saepe reiciendis exercitationem corrupti voluptatibus nobis? Nihil.
