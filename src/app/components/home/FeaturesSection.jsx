@@ -1,7 +1,7 @@
 import React from 'react';
 import CardBox from '../shared/card/CardBox';
 import CardContainer from '../shared/card/CardContainer';
-import Section from '../shared/Section';
+import Section from '../shared/sections/Section';
 import FeatureCard from '../shared/cards/FeatureCard';
 
 const FeaturesSection = () => {
