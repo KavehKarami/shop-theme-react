@@ -3,14 +3,20 @@ import FeaturesSection from '../components/home/FeaturesSection';
 import HomeIntro from '../components/home/HomeIntro';
 import OurTeamSection from '../components/home/OurTeamSection';
 import WorkSampleSection from '../components/home/WorkSampleSection';
+import WhyUsSection from '../components/whyUs/WhyUsSection';
 
 const Home = () => {
   return (
     <div className="homeContainer">
       <HomeIntro />
+
       <FeaturesSection />
+
       <WorkSampleSection />
+
       <OurTeamSection />
+
+      <WhyUsSection />
 
       <div className="text-dark">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, impedit aperiam sint minus totam et, illo rem doloremque optio, quisquam labore ratione voluptatem saepe reiciendis exercitationem corrupti voluptatibus nobis? Nihil.
