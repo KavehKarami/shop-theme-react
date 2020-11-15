@@ -6,7 +6,7 @@ import OurTeamCard from '../shared/cards/OurTeamCard';
 
 const OurTeamSection = () => {
   return (
-    <Section title="برخی از نمونه کار های ما">
+    <Section title="برخی از اعضای تیم ما">
       <CardContainer className="col-12 col-sm-4" boxClass="row flex-sm-column flex-lg-row">
         <CardBox className="col-12 col-sm-12 col-lg-6 card-box" >
           <OurTeamCard person="کاوه کرمی" position="برنامه نویس" imgURL={require('../../../assets/img/team.jpg')} />
