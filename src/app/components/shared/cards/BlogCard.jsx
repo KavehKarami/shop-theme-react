@@ -25,7 +25,7 @@ const BlogCard = (props) => {
         </div>
         <h4 className="title">{props.title}</h4>
         <div className="description">{props.description}</div>
-        <a href={props.href || "/#"} className="readMore">Read More</a>
+        <a href={props.href || "/#"} className="readMore">برای دیدن کلیک کنید</a>
       </div>
     </div>
   );
