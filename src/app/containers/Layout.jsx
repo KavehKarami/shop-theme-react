@@ -5,12 +5,12 @@ import Footer from '../components/layout/Sidebar';
 
 const Layout = (props) => {
   return (
-    <React.Fragment>
+    <div className="mb-md-0 mb-120">
       <Navbar />
       {/* <Header /> */}
       {props.children}
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 
