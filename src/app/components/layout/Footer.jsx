@@ -19,20 +19,18 @@ const Footer = () => {
         </section>
 
         <div className="row pt-3">
-          <div className="col-12 my-4 mb-1">
+          <div className="col-12 col-md-4 my-4 mb-1">
             <div className="footer-link-title">درباره ما</div>
-            <div className="footer-about-us">
+            <div className="footer-items">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
             </div>
           </div>
-        </div>
 
-        <div className="row">
-          <div className="col-12 col-md-4  mt-3 mb-5">
+          <div className="col-12 col-md-4   mt-3 mb-5">
 
             <div className="footer-link-title">تماس با ما</div>
 
-            <div className="d-flex mb-3 align-items-center justify-content-start">
+            <div className="footer-items d-flex mb-3 align-items-center justify-content-start">
               <PhoneIcon />
 
               <a href="callto:+989186948289" className="mr-3 footer-contact-text">
@@ -40,7 +38,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="d-flex mb-3 align-items-center justify-content-start text-nowrap">
+            <div className="footer-items d-flex mb-3 align-items-center justify-content-start text-nowrap">
               <MailIcon />
 
               <a href="maillto:Kaveh.Karami.KK@gmail.com" className="mr-3 footer-contact-text">
