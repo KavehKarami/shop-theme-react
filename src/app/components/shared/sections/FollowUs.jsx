@@ -2,8 +2,8 @@ import React from 'react';
 
 const FollowUs = (props) => {
   return (
-    <div class="follow-us">
-      <div class="box">
+    <div className="follow-us">
+      <div className="box">
         <a href={props.twitterId || "/#"}>
           <img src="https://i.ibb.co/D9h7fFP/twitter.png" alt="" />
         </a>
