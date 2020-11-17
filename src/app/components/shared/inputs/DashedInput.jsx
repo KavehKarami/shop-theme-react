@@ -2,7 +2,7 @@ import React from 'react';
 
 const DashedInput = (props) => {
   return (
-    <div className="dashed-input-gp input-group w-auto mr-4">
+    <div className={`${props.className} dashed-input-gp input-group w-auto`}>
 
       <input type="email" placeholder={props.placeholder} required />
 
