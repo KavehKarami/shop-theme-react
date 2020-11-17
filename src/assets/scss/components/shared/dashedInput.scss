@@ -1,0 +1,136 @@
+$main-color: #b71c1c;
+
+.dashed-input-gp.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+
+  * {
+    outline: none;
+  }
+
+  .hover-border-y {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 0;
+      height: 3px;
+      background-color: $main-color;
+      z-index: 11;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      height: 3px;
+      background-color: $main-color;
+      z-index: 11;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .hover-border-right {
+    content: "";
+    position: absolute;
+    width: 3px;
+    left: 0;
+    height: 100%;
+    background-color: $main-color;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  input {
+    padding: 20px;
+    border: 3px dashed $main-color;
+    border-right: none;
+    width: 300px;
+    transition: 0.3s ease-in-out;
+    direction: ltr;
+    color: $main-color;
+    font-size: 15px;
+
+    &:focus ~ .hover-border-right,
+    &:focus ~ .hover-border-y:before,
+    &:focus ~ .hover-border-y:after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    background-color: $main-color;
+    overflow: hidden;
+    outline: none;
+
+    &:hover {
+      .arrow-box {
+        .arrow--hover {
+          transform: translateX(0);
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .arrow--frist {
+          transform: translateX(100px);
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+
+    .arrow-box {
+      position: relative;
+      transition: 0.3s ease-in-out;
+
+      .arrow {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        position: absolute;
+
+        img {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 20px;
+        }
+      }
+
+      .arrow--hover {
+        transform: translatex(-100px);
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
