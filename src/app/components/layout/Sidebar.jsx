@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Footer = () => {
+const Sidebar = () => {
   return (
-    <div>Footer Here</div>
+    <div>Sidebar Here!</div>
   );
 }
 
-export default Footer;
+export default Sidebar;
