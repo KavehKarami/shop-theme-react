@@ -1,6 +1,17 @@
 footer {
   background-image: linear-gradient(135deg, #093170, #3378af);
 }
+.footer-main {
+  padding-top: calc(38px + 3rem);
+  overflow: hidden;
+
+  @include bp-md {
+    padding-top: calc(78px + 3rem);
+  }
+  @include bp-lg {
+    padding-top: calc(100px + 3rem);
+  }
+}
 .sub-to-news {
   justify-content: center;
   align-items: center;

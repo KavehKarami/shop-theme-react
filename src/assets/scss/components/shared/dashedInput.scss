@@ -65,7 +65,7 @@
     padding: 20px;
     border: 3px dashed $dashed-input;
     border-right: none;
-    width: 80vw;
+    width: 100%;
     transition: 0.3s ease-in-out;
     direction: ltr;
     color: $dashed-input;
@@ -83,6 +83,7 @@
 
     @include bp-md {
       font-size: 14px;
+      width: 80vw;
     }
   }
 
