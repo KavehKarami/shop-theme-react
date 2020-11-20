@@ -12,8 +12,14 @@ footer {
   font-weight: bold;
   margin-right: 15px;
 }
-.footer-items {
+.footer-items:not(ul) {
   padding-right: 30px;
+}
+.footer-items {
+  @include bp-md {
+    font-size: 14px;
+    line-height: 2.5;
+  }
 }
 .footer-contact-text {
   direction: ltr;
@@ -24,5 +30,23 @@ footer {
     color: #fff;
     outline: none;
     border: none;
+  }
+}
+.input-caption {
+  position: relative;
+  text-align: center;
+
+  @include bp-md {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+.footer-contact-box {
+  line-height: 1.5;
+  @include bp-md {
+    margin-top: 25px;
   }
 }

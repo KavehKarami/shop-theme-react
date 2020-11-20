@@ -12,13 +12,15 @@ const Footer = () => {
     <footer className="text-dark mt-5 pt-5 bg-dark">
       <div className="container-fluid">
 
-        <section className="row sub-to-news">
-          <DashedInput className="mb-2" placeholder="example: asd@asd.com" />
-          <div className="mb-4">با عضویت در خبرنامه از آخرین تخفیفات و آفر های ما باخبر باشید.</div>
+        <section className="row sub-to-news mb-md-5">
+          <div className="position-relative">
+            <DashedInput className="mb-2 mb-md-0 mr-md-5" placeholder="example: asd@asd.com" />
+            <div className="mb-4 mb-md-0 mt-md-3 pr-md-5  input-caption">با عضویت در خبرنامه از آخرین تخفیفات و آفر های ما باخبر باشید.</div>
+          </div>
           <FollowUs />
         </section>
 
-        <div className="row pt-3">
+        <div className="row pt-3 justify-content-md-between">
           <div className="col-12 col-md-4 my-4 mb-1">
             <div className="footer-link-title">درباره ما</div>
             <div className="footer-items">
@@ -26,11 +28,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-12 col-md-4   mt-3 mb-5">
+          <div className="col-12 col-md-3   mt-3 mb-5">
 
             <div className="footer-link-title">تماس با ما</div>
 
-            <div className="footer-items d-flex mb-3 align-items-center justify-content-start">
+            <div className="footer-items footer-contact-box d-flex mb-3 align-items-center justify-content-start">
               <PhoneIcon />
 
               <a href="callto:+989186948289" className="mr-3 footer-contact-text">
@@ -38,7 +40,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="footer-items d-flex mb-3 align-items-center justify-content-start text-nowrap">
+            <div className="footer-items footer-contact-box d-flex mb-3 align-items-center justify-content-start">
               <MailIcon />
 
               <a href="maillto:Kaveh.Karami.KK@gmail.com" className="mr-3 footer-contact-text">
@@ -48,9 +50,9 @@ const Footer = () => {
 
           </div>
 
-          <div className="col-6 col-md-4 mt-3 mb-5 d-none d-md-block">
+          <div className="col-6 col-md-2 mt-3 mb-5 d-none d-md-block">
             <div className="footer-link-title">دسترسی سریع</div>
-            <ul>
+            <ul className="footer-items">
               {routes.map((route, index) => (
                 <li key={index}>
                   <Link className="text-light" to={route.path}>{route.label}</Link>

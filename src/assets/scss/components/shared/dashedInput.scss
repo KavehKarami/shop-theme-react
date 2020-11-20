@@ -6,6 +6,11 @@
   outline: none;
   overflow: hidden;
   width: 100%;
+
+  @include bp-md {
+    max-width: 450px;
+  }
+
   * {
     outline: none;
   }
@@ -72,8 +77,12 @@
       visibility: visible;
     }
 
-    &::placeholder {
+    @include placeholder {
       color: rgba(53, 109, 192, 0.425);
+    }
+
+    @include bp-md {
+      font-size: 14px;
     }
   }
 
