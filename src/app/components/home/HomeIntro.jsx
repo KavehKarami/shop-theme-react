@@ -6,7 +6,7 @@ import ShapeDivider1 from '../shared/shape-dividers/ShapeDivider1';
 const HomeIntro = () => {
   return (
     <div className="position-relative homeIntro">
-      <div className="py-3 px-5 font-weight-bold">سایت ما</div>
+      <div className="py-3 px-5 font-weight-bold text-md-none">سایت ما</div>
       <h1 className="title text-center p-md-4">
         <Typed
           strings={['بهترین سایت ها']}
