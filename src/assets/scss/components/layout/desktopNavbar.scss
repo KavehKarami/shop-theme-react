@@ -78,3 +78,12 @@ nav.main-navigation ul ul ul {
   right: 100%;
   top: 0;
 }
+
+nav.otherPathNav {
+  background-color: $lightBlue-900-dark;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.link-active {
+  color: $cyan-a200 !important;
+}

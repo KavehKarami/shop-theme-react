@@ -1,13 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { routes } from '../../../routes';
 
 const DesktopNav = () => {
+  const location = useLocation();
+  const [isHome, setIsHome] = useState();
+
+  useEffect(() => {
+    const path = location.pathname === "/";
+    setIsHome(path);
+
+  }, [location, isHome]);
+
   return (
-    <nav className="main-navigation d-none d-md-flex">
+    <nav className={isHome ? "main-navigation d-none d-md-flex" : "main-navigation d-none d-md-flex otherPathNav"}>
       <ul>
         {routes.map((route, index) =>
-          <li key={index}><Link to={route.path}>{route.label}</Link></li>
+          <li key={index}><Link className={location.pathname === route.path ? "link-active" : "text-white"} to={route.path}>{route.label}</Link></li>
         )}
         <li><a href="/#">سایر</a>
           <ul>
