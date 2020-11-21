@@ -1,29 +1,33 @@
 import React, { useEffect } from 'react';
 
 const UpToTop = () => {
-  const rootElement = document.documentElement;
-
   useEffect(() => {
-    const upToTopBtn = document.getElementById("up-to-top");
+    try {
+      const rootElement = document.documentElement;
+      const upToTopBtn = document.getElementById("up-to-top");
 
-    const showBtn = () => {
-      if (document.body.scrollTop > 100 || rootElement.scrollTop > 100) {
-        upToTopBtn.classList.add('active');
-      } else {
-        upToTopBtn.classList.remove('active');
+      const showBtn = () => {
+        if (document.body.scrollTop > 100 || rootElement.scrollTop > 100) {
+          upToTopBtn.classList.add('active');
+        } else {
+          upToTopBtn.classList.remove('active');
+        }
       }
+
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+
+      document.addEventListener("scroll", showBtn);
+      upToTopBtn.addEventListener("click", scrollToTop);
+
     }
-
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+    catch (e) {
+      console.log(e);
     }
-
-    document.addEventListener("scroll", showBtn);
-    upToTopBtn.addEventListener("click", scrollToTop);
-
   }, []);
 
 
