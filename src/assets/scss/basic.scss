@@ -26,3 +26,9 @@ a:hover {
 .mb-120 {
   margin-bottom: 120px;
 }
+
+.text-md-none {
+  @include bp-md {
+    text-indent: -9999999px;
+  }
+}
