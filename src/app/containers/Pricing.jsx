@@ -13,26 +13,26 @@ const Pricing = () => {
             <img src="https://i.ibb.co/YXTWzVQ/bronze.png" alt="" />
           </div>
 
-          <div className="card-title">Lorem Ipusem</div>
+          <div className="card-title">لورم ایپسوم</div>
 
           <ul className="pricing-feature">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
 
           </ul>
 
           <div className="btnBx">
             <button>
-              Order Now!
+              سفارش دهید
             </button>
           </div>
 
@@ -44,26 +44,26 @@ const Pricing = () => {
             <img src="https://i.ibb.co/5v5VtTh/gold.png" alt="" />
           </div>
 
-          <div className="card-title">Lorem Ipusem</div>
+          <div className="card-title">لورم ایپسوم</div>
 
           <ul className="pricing-feature">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
 
           </ul>
 
           <div className="btnBx">
             <button>
-              Order Now!
+              سفارش دهید
             </button>
           </div>
 
@@ -75,26 +75,26 @@ const Pricing = () => {
             <img src="https://i.ibb.co/Ht9p6cb/silver.png" alt="" />
           </div>
 
-          <div className="card-title">Lorem Ipusem</div>
+          <div className="card-title">لورم ایپسوم</div>
 
           <ul className="pricing-feature">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
+            <li className="doesnt-have">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</li>
 
           </ul>
 
           <div className="btnBx">
             <button>
-              Order Now!
+              سفارش دهید
             </button>
           </div>
 

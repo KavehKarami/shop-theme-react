@@ -13,6 +13,7 @@
   background-image: linear-gradient(135deg, #111c31, #003c6c);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin: 50px 15px 15px;
+  white-space: break-spaces;
 
   .iconBx {
     position: absolute;
@@ -48,9 +49,13 @@
     padding-right: 8px;
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       padding-right: 25px;
+      padding-left: 25px;
       position: relative;
+      @include bp-md {
+        font-size: 13px;
+      }
 
       &.doesnt-have {
         color: #cecece;
@@ -96,7 +101,7 @@
 
   // for gold product
   &.gold-product {
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 
     &:hover {
       transform: scale(1.05);
