@@ -1,0 +1,104 @@
+.pricing-section {
+  padding-top: 100px;
+}
+
+.pricing-card {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(135deg, #111c31, #003c6c);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin: 50px 15px 15px;
+
+  .iconBx {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      width: 70px;
+      top: -35px;
+    }
+  }
+
+  .card-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .pricing-feature {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 0;
+    padding-right: 8px;
+
+    li {
+      margin-bottom: 10px;
+      padding-right: 25px;
+      position: relative;
+
+      &.doesnt-have {
+        color: #cecece;
+        text-decoration: line-through;
+        opacity: 0.5;
+
+        &:before {
+          background-image: url(https://i.ibb.co/j5NTKd9/clear.png);
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        background-image: url(https://i.ibb.co/MNfVLs8/check-mark.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .btnBx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      padding: 10px 25px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      background-color: #0091ea;
+      color: #fff;
+    }
+  }
+
+  // for gold product
+  &.gold-product {
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
+  }
+}
