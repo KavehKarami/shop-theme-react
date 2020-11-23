@@ -1,0 +1,14 @@
+.about-section {
+  @include bp-md {
+    padding-top: 100px;
+  }
+  .imgBx {
+    min-width: 300px;
+    max-width: 500px;
+  }
+
+  .description {
+    color: #335;
+    font-size: 14px;
+  }
+}

@@ -1,7 +1,6 @@
 import React from 'react';
 import WorkSampleSection from "../components/home/WorkSampleSection";
 import PricingSection from '../components/pricing/PricingSection';
-import PricingCard from '../components/shared/cards/PricingCard';
 import WhyUsSection from "../components/whyUs/WhyUsSection";
 
 const Pricing = () => {
