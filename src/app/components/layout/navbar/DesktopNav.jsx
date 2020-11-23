@@ -15,7 +15,7 @@ const DesktopNav = () => {
 
   return (
     <nav className={isHome ? "main-navigation d-none d-md-flex" : "main-navigation d-none d-md-flex otherPathNav"}>
-      <ul>
+      <ul className="mr-4" >
         {routes.map((route, index) =>
           <li key={index}><Link className={location.pathname === route.path ? "link-active" : "text-white"} to={route.path}>{route.label}</Link></li>
         )}
