@@ -1,5 +1,7 @@
 .pricing-section {
-  padding-top: 100px;
+  @include bp-md {
+    padding-top: 100px !important;
+  }
 }
 
 .pricing-card {

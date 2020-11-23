@@ -1,103 +1,111 @@
 import React from 'react';
+import WorkSampleSection from "../components/home/WorkSampleSection";
+import WhyUsSection from "../components/whyUs/WhyUsSection";
 
 const Pricing = () => {
   return (
-    <section class="container pricing-section d-flex justify-content-center align-items-center">
+    <React.Fragment>
+      <section className="container pt-3 mb-5 pricing-section d-flex justify-content-center align-items-center flex-wrap">
 
-      <article class="pricing-card">
+        <article className="pricing-card">
 
-        <div class="iconBx">
-          <img src="https://i.ibb.co/YXTWzVQ/bronze.png" alt="" />
-        </div>
+          <div className="iconBx">
+            <img src="https://i.ibb.co/YXTWzVQ/bronze.png" alt="" />
+          </div>
 
-        <div class="card-title">Lorem Ipusem</div>
+          <div className="card-title">Lorem Ipusem</div>
 
-        <ul class="pricing-feature">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+          <ul className="pricing-feature">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
 
-        </ul>
+          </ul>
 
-        <div class="btnBx">
-          <button>
-            Order Now!
-      </button>
-        </div>
+          <div className="btnBx">
+            <button>
+              Order Now!
+            </button>
+          </div>
 
-      </article>
+        </article>
 
-      <article class="pricing-card gold-product">
+        <article className="pricing-card gold-product">
 
-        <div class="iconBx">
-          <img src="https://i.ibb.co/5v5VtTh/gold.png" alt="" />
-        </div>
+          <div className="iconBx">
+            <img src="https://i.ibb.co/5v5VtTh/gold.png" alt="" />
+          </div>
 
-        <div class="card-title">Lorem Ipusem</div>
+          <div className="card-title">Lorem Ipusem</div>
 
-        <ul class="pricing-feature">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+          <ul className="pricing-feature">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
 
-        </ul>
+          </ul>
 
-        <div class="btnBx">
-          <button>
-            Order Now!
-      </button>
-        </div>
+          <div className="btnBx">
+            <button>
+              Order Now!
+            </button>
+          </div>
 
-      </article>
+        </article>
 
-      <article class="pricing-card">
+        <article className="pricing-card">
 
-        <div class="iconBx">
-          <img src="https://i.ibb.co/Ht9p6cb/silver.png" alt="" />
-        </div>
+          <div className="iconBx">
+            <img src="https://i.ibb.co/Ht9p6cb/silver.png" alt="" />
+          </div>
 
-        <div class="card-title">Lorem Ipusem</div>
+          <div className="card-title">Lorem Ipusem</div>
 
-        <ul class="pricing-feature">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
-          <li class="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+          <ul className="pricing-feature">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
+            <li className="doesnt-have">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, illum!</li>
 
-        </ul>
+          </ul>
 
-        <div class="btnBx">
-          <button>
-            Order Now!
-      </button>
-        </div>
+          <div className="btnBx">
+            <button>
+              Order Now!
+            </button>
+          </div>
 
-      </article>
+        </article>
 
-    </section>
+      </section>
+
+      <WorkSampleSection />
+      <WhyUsSection />
+
+    </React.Fragment>
   );
 }
 
