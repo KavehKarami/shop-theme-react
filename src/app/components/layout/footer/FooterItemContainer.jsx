@@ -23,7 +23,7 @@ const FooterItemContainer = () => {
       <FooterItemSection className="col-6 col-md-2 mt-3 mb-5 d-none d-md-block" title="دسترسی سریع">
         <ul className="footer-items">
           {routes.map((route, index) => (
-            <li key={index}>
+            <li className={!route.label ? "d-none" : undefined} key={index}>
               <Link className="text-light" to={route.path}>{route.label}</Link>
             </li>
           ))}

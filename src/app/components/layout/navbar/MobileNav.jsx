@@ -4,19 +4,31 @@ import { mobileNavRouter } from '../../../routes';
 import OtherIcon from '../../shared/icons/OtherIcon';
 import CustomLink from '../../utils/CustomLink';
 
-
 const MobileNav = () => {
   const location = useLocation();
 
   useEffect(() => {
-    handleTabBar()
-  }, [location])
+    handleTabBar();
+  }, [location]) // eslint-disable-line react-hooks/exhaustive-deps
 
   function handleTabBar() {
-    var tabBarActive = document.querySelector(".tab-item.active");
-    var tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-    var distance = Math.floor(tabBarActive.offsetLeft - 30);
+    let others = document.querySelector(".tab-others");
+    others.classList.add('active');
+    let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+    let distance = Math.floor(others.offsetLeft - 30);
     tabIndicator.style.transform = "translateX(" + distance + "px)";
+
+    mobileNavRouter.find(route => {
+      if (route.path === location.pathname) {
+        others.classList.remove('active');
+        let tabBarActive = document.querySelector(".tab-item.active");
+        let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+        let distance = Math.floor(tabBarActive.offsetLeft - 30);
+        tabIndicator.style.transform = "translateX(" + distance + "px)";
+        return true;
+      }
+      return false;
+    })
   }
 
   document.addEventListener("DOMContentLoaded", handleTabBar);
