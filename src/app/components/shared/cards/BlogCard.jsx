@@ -1,4 +1,5 @@
 import React from 'react';
+import ClockIcon from '../icons/ClockIcon';
 import LikeIcon from '../icons/LikeIcon';
 import ViewIcon from '../icons/ViewIcon';
 
@@ -17,6 +18,10 @@ const BlogCard = (props) => {
           <div className="d-flex align-items-center">
             <span className="ml-2">{123123}</span>
             <ViewIcon />
+          </div>
+          <div className="d-flex align-items-center">
+            <span className="ml-2">99/08/26</span>
+            <ClockIcon />
           </div>
           <div className="d-flex align-items-center">
             <span className="ml-2">{123123}</span>
