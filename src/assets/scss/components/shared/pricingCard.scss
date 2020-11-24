@@ -82,6 +82,13 @@
     }
   }
 
+  .price {
+    font-size: 14px;
+    .text-light {
+      color: $cyan-a200 !important;
+    }
+  }
+
   .btnBx {
     width: 100%;
     display: flex;
@@ -94,7 +101,7 @@
       cursor: pointer;
       transition: 0.3s ease-in-out;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-      background-color: #0091ea;
+      background-color: $lightBlue-700;
       color: #fff;
     }
   }

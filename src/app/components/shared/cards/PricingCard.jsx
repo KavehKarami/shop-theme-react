@@ -14,6 +14,13 @@ const PricingCard = (props) => {
         {props.children}
       </ul>
 
+      <div className="price text-center my-3">
+        <span className="font-weight-bold">قیمت : </span>
+        {props.isGold && <span>از </span>}
+        <span className="faNum text-light">{props.price}</span>
+        <span> میلیون تومان</span>
+      </div>
+
       <div className="btnBx">
         <button>
           سفارش دهید
