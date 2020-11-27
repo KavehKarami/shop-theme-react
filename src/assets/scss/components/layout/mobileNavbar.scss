@@ -183,18 +183,84 @@
 
     li {
       margin: 20px 0;
+    }
 
-      .menu {
-        color: #fff;
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #fdfdfd;
-      }
+    .menu {
+      color: #fff;
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid #fdfdfd;
+      transition: 0.3s ease-in-out;
+    }
 
-      .menu-active {
-        border-bottom: 1px solid $cyan-a700;
-        color: $cyan-a700;
+    .menu-active {
+      border-bottom: 1px solid $cyan-a700;
+      color: $cyan-a700;
+    }
+
+    button {
+      outline: none;
+    }
+  }
+}
+
+// NOTE this class only for css that we won't to close by click
+.menu-dont-close {
+  content: "";
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  text-align: right;
+  transition: 0.3s ease-in-out;
+
+  .iconBx {
+    transition: 0.3s ease-in-out;
+    width: 15px;
+
+    svg {
+      path {
+        transition: 0.3s ease-in-out;
       }
     }
+  }
+
+  &.active {
+    span {
+      color: $cyan-a700;
+    }
+
+    .iconBx {
+      transform: rotate(-90deg);
+
+      svg {
+        path {
+          fill: $cyan-a700;
+        }
+      }
+    }
+  }
+}
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+  padding: 0 15px;
+
+  a {
+    color: #fff;
+    margin: 5px 0;
   }
 }
