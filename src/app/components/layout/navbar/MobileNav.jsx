@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { mobileNavRouter, routes } from '../../../routes';
+import { useLocation } from 'react-router-dom';
+import { mobileNavRouter } from '../../../routes';
 import MobileMenuSection from '../../mobileMenu/MobileMenuSection';
-import LeftArrowIcon from '../../shared/icons/LeftArrowIcon';
 import OtherIcon from '../../shared/icons/OtherIcon';
 import CustomLink from '../../utils/CustomLink';
 
