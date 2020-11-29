@@ -145,3 +145,38 @@
     }
   }
 }
+
+.dashed-input-gp-rtl.input-group {
+  @extend .dashed-input-gp.input-group;
+
+  .hover-border-right {
+    left: auto;
+    right: 0;
+  }
+
+  input {
+    border: 3px dashed $dashed-input;
+    border-left: none;
+    border-right: 3px dashed $dashed-input;
+    direction: rtl;
+  }
+
+  button {
+    right: auto;
+    left: 0;
+
+    &:hover {
+      .arrow-box {
+        .arrow--frist {
+          transform: translateX(-100px);
+        }
+      }
+    }
+
+    .arrow-box {
+      .arrow--hover {
+        transform: translatex(100px);
+      }
+    }
+  }
+}

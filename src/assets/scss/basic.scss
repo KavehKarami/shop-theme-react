@@ -35,3 +35,8 @@ a:hover {
 .faNum {
   font-family: FaNum;
 }
+.pt-md-100 {
+  @include bp-md {
+    padding-top: 100px !important;
+  }
+}
