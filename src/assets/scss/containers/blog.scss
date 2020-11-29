@@ -8,7 +8,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3),
+      inset 0 -5px 0px rgba(80, 80, 80, 0.1),
+      inset 0 -10px 0px rgba(150, 150, 150, 0.1);
     overflow: hidden;
     color: $blue-900-dark;
     cursor: pointer;
@@ -43,6 +45,10 @@
       &:after {
         transform: translateY(0);
       }
+
+      box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4),
+        inset 0 -5px 0px rgba(80, 80, 80, 0),
+        inset 0 -10px 0px rgba(150, 150, 150, 0);
     }
 
     &:active {
