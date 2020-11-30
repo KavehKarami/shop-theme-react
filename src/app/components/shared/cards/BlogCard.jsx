@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ClockIcon from '../icons/ClockIcon';
 import LikeIcon from '../icons/LikeIcon';
 import ViewIcon from '../icons/ViewIcon';
@@ -30,7 +31,7 @@ const BlogCard = (props) => {
         </div>
         <h4 className="title">{props.title}</h4>
         <div className="description">{props.description}</div>
-        <a href={props.href || "/#"} className="readMore">برای دیدن کلیک کنید</a>
+        <Link to={props.href || "/blog/single"} className="readMore">برای دیدن کلیک کنید</Link>
       </div>
     </div>
   );
