@@ -1,0 +1,162 @@
+.blog-single-post {
+  .imgBx {
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      .calendar {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+
+    .calendar {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      z-index: 22;
+      bottom: 0;
+      right: 75px;
+      width: 100px;
+      height: 100px;
+      background: $lightBlue-900-dark;
+      border-radius: 15px 15px 0 0;
+      transition: 0.3s ease-in-out;
+      transform: translateY(102px);
+      opacity: 0;
+      visibility: hidden;
+
+      .day {
+        font-size: 26px;
+      }
+      .month {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .title,
+  .description {
+    color: #335;
+  }
+
+  .description {
+    line-height: 1.8;
+    @include bp-md {
+      font-size: 15px;
+    }
+  }
+
+  .categories,
+  .tags {
+    display: flex;
+    margin: 8px 15px;
+
+    span,
+    a {
+      font-size: 15px;
+      font-weight: 300;
+    }
+    span {
+      color: #335;
+      font-weight: bold;
+    }
+    a {
+      color: $cyan-a700-dark;
+      margin: 0 5px;
+    }
+  }
+
+  .post-author {
+    margin: 35px 40px 15px 0;
+    display: flex;
+
+    .author-img-box {
+      max-width: 150px;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .author-about {
+      margin-right: 20px;
+    }
+
+    .author-name,
+    .author-description {
+      margin: 15px 0;
+      color: #335;
+      font-size: 14px;
+      max-width: 400px;
+      line-height: 1.6;
+    }
+
+    .author-name {
+      margin-top: 0;
+      font-weight: bold;
+      font-size: 15px;
+    }
+  }
+
+  .comments-section {
+    margin: 35px 40px 15px 0;
+
+    * {
+      color: #335;
+    }
+
+    .comment {
+      display: flex;
+      flex-direction: column;
+      margin: 25px 0;
+
+      * {
+        font-size: 14px;
+      }
+
+      .intro {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .itro-img-bx {
+          width: 70px;
+
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+
+        .comment-detail {
+          margin-right: 15px;
+
+          .comment-date {
+            font-weight: 300;
+          }
+        }
+      }
+
+      .comment-text,
+      .reply-btn {
+        margin-right: 40px;
+        max-width: 400px;
+      }
+
+      .comment {
+        margin-right: 50px;
+      }
+    }
+  }
+}
