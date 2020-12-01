@@ -34,7 +34,7 @@ const UpToTop = () => {
 
   return (
     <div id="up-to-top">
-      <span><img src="https://i.ibb.co/5krn9rB/arrow-up.png" alt="" /></span>
+      <span><img src={require('../../../../assets/img/arrow-up.png')} alt="" /></span>
     </div>
   );
 }

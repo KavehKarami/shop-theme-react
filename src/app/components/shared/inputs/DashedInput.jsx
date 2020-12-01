@@ -12,10 +12,10 @@ const DashedInput = (props) => {
       <button>
         <div className="arrow-box">
           <div className="arrow arrow--frist">
-            {props.iconComponent ? props.icon : <img src={props.icon || "https://i.ibb.co/SyHKZF6/arrow-right.png"} alt="" />}
+            {props.iconComponent ? props.icon : <img src={props.icon || require("../../../../assets/img/arrow-right.png")} alt="" />}
           </div>
           <div className="arrow arrow--hover">
-            {props.iconComponent ? props.icon : <img src={props.icon || "https://i.ibb.co/SyHKZF6/arrow-right.png"} alt="" />}
+            {props.iconComponent ? props.icon : <img src={props.icon || require("../../../../assets/img/arrow-right.png")} alt="" />}
           </div>
         </div>
       </button>

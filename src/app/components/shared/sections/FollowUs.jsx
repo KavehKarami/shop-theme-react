@@ -5,13 +5,13 @@ const FollowUs = (props) => {
     <div className="follow-us">
       <div className="box">
         <a href={props.twitterId || "/#"}>
-          <img src="https://i.ibb.co/D9h7fFP/twitter.png" alt="" />
+          <img src={require('../../../../assets/img/twitter.png')} alt="" />
         </a>
         <a href={props.instaId || "/#"}>
-          <img src="https://i.ibb.co/vBbBkR9/instagram.png" alt="" />
+          <img src={require('../../../../assets/img/instagram.png')} alt="" />
         </a>
         <a href={props.githubId || "https://github.com/KavehKarami"}>
-          <img src="https://i.ibb.co/MS8y3mg/github.png" alt="" />
+          <img src={require('../../../../assets/img/github.png')} alt="" />
         </a>
       </div>
     </div>

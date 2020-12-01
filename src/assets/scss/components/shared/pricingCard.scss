@@ -63,7 +63,7 @@
         opacity: 0.5;
 
         &:before {
-          background-image: url(https://i.ibb.co/j5NTKd9/clear.png);
+          background-image: url("../../../img/clear.png");
         }
       }
 
@@ -74,7 +74,7 @@
         right: 0;
         width: 15px;
         height: 15px;
-        background-image: url(https://i.ibb.co/MNfVLs8/check-mark.png);
+        background-image: url("../../../img/check-mark.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
