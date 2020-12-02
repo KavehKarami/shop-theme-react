@@ -126,9 +126,118 @@ const BlogSingle = () => {
         </article>
 
         <div className="col-md-4">
-          <SearchBox className="m-0" />
-        </div>
+          <SearchBox className="m-0 mb-3" />
+          <div className="categories-box">
+            <div className="box-title">دسته بندی ها</div>
+            <a href="/blog/single/#" className="category-item">
+              <span>تکنولوژی</span>
+              <span>12</span>
+            </a>
+            <a href="/blog/single/#" className="category-item">
+              <span>برنامه نویسی</span>
+              <span>43</span>
+            </a>
+          </div>
 
+          <div className="archive-box">
+            <div className="box-title">آرشیو مطالب</div>
+            <a href="/blog/single/#" className="archive-item">
+              <span>آذر 99</span>
+              <span>244</span>
+            </a>
+            <a href="/blog/single/#" className="archive-item">
+              <span>آبان 99</span>
+              <span>734</span>
+            </a>
+          </div>
+
+
+
+
+
+          <div className="posts-box">
+            <div className="box-title">پست های مرتبط</div>
+            <a href="/blog/single/#" className="post-item">
+              <div className="imgBx">
+                <img src={require('../../assets/img/blog-post.jpg')} alt="" />
+              </div>
+              <div className="detailsBx">
+                <div className="title font-weight-bold">لورم ایپسوم</div>
+                <div className="date-added">
+                  17 اردیبهشت 99 ساعت 17:32
+              </div>
+              </div>
+            </a>
+
+            <a href="/blog/single/#" className="post-item">
+              <div className="imgBx">
+                <img src={require('../../assets/img/blog-post.jpg')} alt="" />
+              </div>
+              <div className="detailsBx">
+                <div className="title font-weight-bold">لورم ایپسوم</div>
+                <div className="date-added">
+                  17 اردیبهشت 99 ساعت 17:32
+              </div>
+              </div>
+            </a>
+
+            <a href="/blog/single/#" className="post-item">
+              <div className="imgBx">
+                <img src={require('../../assets/img/blog-post.jpg')} alt="" />
+              </div>
+              <div className="detailsBx">
+                <div className="title font-weight-bold">لورم ایپسوم</div>
+                <div className="date-added">
+                  17 اردیبهشت 99 ساعت 17:32
+              </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div className="posts-box">
+            <div className="box-title">پست های محبوب</div>
+            <a href="/blog/single/#" className="post-item">
+              <div className="imgBx">
+                <img src={require('../../assets/img/blog-post.jpg')} alt="" />
+              </div>
+              <div className="detailsBx">
+                <div className="title font-weight-bold">لورم ایپسوم</div>
+                <div className="date-added">
+                  17 اردیبهشت 99 ساعت 17:32
+              </div>
+              </div>
+            </a>
+
+            <a href="/blog/single/#" className="post-item">
+              <div className="imgBx">
+                <img src={require('../../assets/img/blog-post.jpg')} alt="" />
+              </div>
+              <div className="detailsBx">
+                <div className="title font-weight-bold">لورم ایپسوم</div>
+                <div className="date-added">
+                  17 اردیبهشت 99 ساعت 17:32
+              </div>
+              </div>
+            </a>
+
+            <a href="/blog/single/#" className="post-item">
+              <div className="imgBx">
+                <img src={require('../../assets/img/blog-post.jpg')} alt="" />
+              </div>
+              <div className="detailsBx">
+                <div className="title font-weight-bold">لورم ایپسوم</div>
+                <div className="date-added">
+                  17 اردیبهشت 99 ساعت 17:32
+              </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+        </div>
       </Section>
     </div>
   );
