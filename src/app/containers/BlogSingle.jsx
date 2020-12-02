@@ -44,8 +44,37 @@ const BlogSingle = () => {
             </div>
           </div>
 
-          <div className="comments-section">
 
+          <div className="write-comment w-100">
+            <h4 className="my-4 text-center">نظر خود را ارسال کنید</h4>
+            <form className="mx-auto">
+              <div className="form-group">
+                <input type="text" id="name" name="name" required />
+                <label htmlFor="name">نام * </label>
+              </div>
+
+              <div className="form-group">
+                <input type="text" id="family" name="family" required />
+                <label htmlFor="family">نام خانوادگی * </label>
+              </div>
+
+              <div className="form-group">
+                <input className="text-left direction-ltr" type="text" id="email" name="email" required />
+                <label htmlFor="email">ایمیل * </label>
+              </div>
+
+              <div className="form-group">
+                <textarea type="text" name="textArea" id="textArea" rows="6" required></textarea>
+                <label htmlFor="textArea">نظر خود را وارد کنید * </label>
+              </div>
+
+              <button type="submit">
+                ارسال
+              </button>
+            </form>
+          </div>
+
+          <div className="comments-section">
             <h4 className="my-4 text-center">نظرات (03)</h4>
 
             <div className="comment">
@@ -93,8 +122,6 @@ const BlogSingle = () => {
                 </div>
               </div>
             </div>
-
-
           </div>
         </article>
 

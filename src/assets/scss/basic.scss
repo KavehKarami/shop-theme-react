@@ -11,6 +11,9 @@ body {
 .text-dark {
   color: $lightBlue-900 !important;
 }
+.direction-ltr {
+  direction: ltr;
+}
 a,
 a:hover {
   text-decoration: none;
