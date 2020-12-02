@@ -7,9 +7,11 @@ const BlogSingle = () => {
   return (
     <div className="pt-3 pt-md-100">
       <Section>
-        <article className="col-md-8 blog-single-post d-flex flex-column align-items-start">
-          <h1 className="h4 title text-center mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</h1>
-          <div className="imgBx">
+        {/* REVIEW */}
+        <article className="col-12 col-md-7 col-xl-8 blog-single-post d-flex flex-column align-items-start">
+          <SearchBox className="m-0 mb-4 d-lg-none d-flex justify-content-center" />
+          <h1 className="title mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ است.</h1>
+          <div className="imgBx align-self-center align-self-md-start">
             <img src={require('../../assets/img/blog-post.jpg')} alt="" />
             <div className="calendar">
               <div className="day">17</div>
@@ -46,7 +48,7 @@ const BlogSingle = () => {
 
 
           <div className="write-comment w-100">
-            <h4 className="my-4 text-center">نظر خود را ارسال کنید</h4>
+            <h4 className="my-4 title text-center">نظر خود را ارسال کنید</h4>
             <form className="mx-auto">
               <div className="form-group">
                 <input type="text" id="name" name="name" required />
@@ -125,8 +127,9 @@ const BlogSingle = () => {
           </div>
         </article>
 
-        <div className="col-md-4">
-          <SearchBox className="m-0 mb-3" />
+        {/* REVIEW */}
+        <div className="col-12 col-md-5 col-xl-4">
+          <SearchBox className="m-0 mb-3 d-none d-lg-flex" />
           <div className="categories-box">
             <div className="box-title">دسته بندی ها</div>
             <a href="/blog/single/#" className="category-item">
