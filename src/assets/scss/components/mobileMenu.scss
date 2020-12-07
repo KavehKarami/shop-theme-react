@@ -12,6 +12,11 @@
   visibility: hidden;
   transition: 0.2s ease-in-out;
 
+  * {
+    outline: none;
+    border: none;
+  }
+
   &.open-menu {
     transform: translateX(0);
     opacity: 1;

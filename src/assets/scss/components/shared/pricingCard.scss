@@ -100,7 +100,7 @@
       border: none;
       cursor: pointer;
       transition: 0.3s ease-in-out;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       background-color: $lightBlue-700;
       color: #fff;
     }
@@ -112,7 +112,7 @@
 
     &:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
     }
   }
 }

@@ -13,7 +13,7 @@
   left: 15px;
   cursor: pointer;
   color: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 85, 0.5);
+  box-shadow: 0 0 25px rgba(0, 0, 85, 0.3);
   transition: 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
@@ -45,7 +45,7 @@
   }
 
   &:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 17, 0.8);
+    box-shadow: 0 0 30px rgba(0, 0, 17, 0.5);
     background-color: $cyan-a700-dark;
 
     span {

@@ -8,12 +8,6 @@
     flex-direction: row;
   }
 
-  &:hover {
-    .description {
-      text-indent: 40px;
-    }
-  }
-
   &.left-img {
     @include bp-md {
       flex-direction: row-reverse;
@@ -33,7 +27,7 @@
       margin: 0 15px;
     }
 
-    filter: drop-shadow(30px 15px 15px rgba(0, 0, 17, 0.4));
+    filter: drop-shadow(30px 15px 15px rgba(0, 0, 17, 0.15));
 
     &:hover {
       img {
@@ -62,6 +56,10 @@
     font-size: 13px;
     line-height: 1.8;
     text-align: right;
+
+    &:hover {
+      text-indent: 40px;
+    }
 
     @include bp-md {
       font-size: 15px;
